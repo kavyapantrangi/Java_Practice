@@ -20,7 +20,7 @@ public class Boxweight extends  Box{
 }
 //child-child
 //parent -child
----parent class:
+--------parent class:
 package inheritance;
 
 public class Box {
