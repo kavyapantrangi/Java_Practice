@@ -31,3 +31,5 @@ public class Main {
 
     }
 }
+object cloning will be copying the exact object values to another with object.clone method if does not create then will 
+    throw clonenotfoundException.by using new keyword wecan create but it will take a lot of time to process. 
