@@ -6,7 +6,7 @@ compare-Comparator interface-compare two objects
   The Comperator has more preference than the Comparable
   
   
-  class:customcomperator
+ --> class:customcomperator
   
   package collections;
 
@@ -53,3 +53,45 @@ public class Priority1 {
 }
 //output is:100,2
 //order
+//Here we using the another class which implements the comparator interface,we can do it by using lambda function also.
+ PriorityQueue<Integer> pq = new PriorityQueue<>((a,b)->b-a);
+By using student class
+  package collections;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.PriorityQueue;
+
+public class Priority1 {
+    public static void main(String[] args) {
+        List<Students> list = new ArrayList<>();
+        list.add(new Students(39, 56));
+        list.add(new Students(67, 67));
+        list.add(new Students(78, 80));
+        list.add(new Students(45, 59));
+        list.add(new Students(90, 69));
+
+        PriorityQueue<Students> pq = new PriorityQueue<>((a, b) ->
+        {
+            System.out.println("Comparator is called");
+            return b.getPhysics() - a.getPhysics();
+        });
+        for(Students s:list)
+        {
+            pq.add(s);
+        }
+        List<Students> top2 = new ArrayList<>();
+        int index = 0;
+        while (!pq.isEmpty()) {
+            if (index == 2)
+                break;
+            top2.add(pq.poll());
+            index++;
+        }
+        System.out.println(top2);
+        System.out.println(pq);
+
+    }
+}
+
+
