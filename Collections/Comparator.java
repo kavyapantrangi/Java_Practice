@@ -1,5 +1,5 @@
-compare-Comparable interface-compare two objects
-  compareTo-Comperator interface- compare one  object
+compare-Comparator interface-compare two objects
+  compareTo-Comperable interface- compare one  object
   The Comparable interface has compareTo(T obj) method which is used by sorting methods
   The comparator provides the two way of sorting.
   The comparable interface-natural ordering and The comparator interface has total ordering.
