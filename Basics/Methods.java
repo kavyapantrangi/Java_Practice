@@ -123,5 +123,14 @@ public class Methods {
 
 
 
+  /when we dont know the number o arguments
+  public static void hellor(String...v)
+    {
+        System.out.println(Arrays.toString(v));
+
+    }
+
+
+
 
 
