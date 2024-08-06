@@ -1,4 +1,4 @@
-// ENCAPSULATION:wrapping up the implementation by hiding the data vearibles and methods.
+// ENCAPSULATION:wrapping up the implementation by hiding the data variables and methods.
 //   focus on the hiding the complexity
 //     Examples: school bag which hides the books,pens etc in bag
 //              bank account by showing only necessary details required to user
