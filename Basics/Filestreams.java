@@ -83,9 +83,9 @@ public class FileHandling {
 
 OutputStream os=System.out;
         System.out.println();
-        try
+        try(OutputStreamWriter osw=new OutputStreamWriter(System.out))
         {
-            OutputStreamWriter osw=new OutputStreamWriter(System.out);
+            
             osw.write("Hello wolrd");
             osw.write(97);
         }
@@ -93,8 +93,6 @@ OutputStream os=System.out;
         {
             System.out.println(e);
         }
-
-
 
 
 
