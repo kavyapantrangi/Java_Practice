@@ -70,5 +70,34 @@ public class FileHandling {
             throw new RuntimeException(e);
         }
 
-  
-  
+
+
+      ///outputstreamwriter
+public class FileHandling {
+    //System,out--->std os-console//print stream
+    //System.in--->std in-->keyboard//inputstream
+    //System.err-->std err->console//print stream
+    public static void main(String[] args) {
+
+
+
+OutputStream os=System.out;
+        System.out.println();
+        try
+        {
+            OutputStreamWriter osw=new OutputStreamWriter(System.out);
+            osw.write("Hello wolrd");
+            osw.write(97);
+        }
+        catch (Exception e)
+        {
+            System.out.println(e);
+        }
+
+
+
+
+
+
+
+
