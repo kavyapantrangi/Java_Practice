@@ -75,7 +75,7 @@ public class FileHandling {
       ///outputstreamwriter
 public class FileHandling {
     //System,out--->std os-console//print stream
-    //System.in--->std in-->keyboard//inputstream
+    //System.in--->std in-->keyboard//inputstream;
     //System.err-->std err->console//print stream
     public static void main(String[] args) {
 
@@ -94,7 +94,12 @@ OutputStream os=System.out;
             System.out.println(e);
         }
 
-
+//To write in the file
+      FileWriter fw=new FileWriter("filename");
+//if we want to write into the existing file then 
+      FileWriter fw=new FileWriter("filename",append:true)
+  //similarily BufferreWriter
+        BufferedWriter bw=new BufferedWriter(new FileWriter("file.txt"));
 
 
 
