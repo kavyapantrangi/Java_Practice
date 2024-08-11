@@ -25,3 +25,21 @@ public class Thread1 extends Thread{
         System.out.println("The main thread is ending");
     }
 }
+By using Runnable Interface:
+package Threads;
+
+public class Thread2 implements Runnable{
+
+    @Override
+    public void run() {
+        for(int i=0;i<5;i++)
+        {
+            System.out.println("I am implememnting by the Runnable Interface "+i);
+        }
+    }
+
+    public static void main(String[] args) {
+        Thread2 th=new Thread2();
+        th.run();
+    }
+}
