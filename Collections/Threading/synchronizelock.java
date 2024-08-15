@@ -47,3 +47,5 @@ public  int pop() {
     }
 }
 }
+-->Whenevere we are using synchronized keyword inside the method then lock should be explicitly needed
+    ,but when its is declared when the method is declared then no lock requires
