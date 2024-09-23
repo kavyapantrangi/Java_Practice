@@ -90,5 +90,65 @@ public class Linked {
         System.out.println(mpp.ceilingEntry("kiana").getValue());
     }
 }
+//Iterating
+import java.util.*;
 
+public class Cricket {
+    private String name;
+    private int ranking;
+    private int score;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getRanking() {
+        return ranking;
+    }
+
+    public void setRanking(int ranking) {
+        this.ranking = ranking;
+    }
+
+    public int getScore() {
+        return score;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
+    }
+
+    Cricket(String name, int ranking, int score) {
+        this.name = name;
+        this.ranking = ranking;
+        this.score = score;
+
+    }
+
+    @Override
+    public String toString() {
+        return "Cricket{" +
+                "name='" + name + '\'' +
+                ", ranking=" + ranking +
+                ", score=" + score +
+                '}';
+    }
+
+    public static void main(String[] args) {
+        HashMap<Integer, Cricket> map = new HashMap<>();
+        map.put(1, new Cricket("Virat ", 1, 973));
+        map.put(2, new Cricket("Dhoni ", 2, 800));
+        map.put(3, new Cricket("sachin ", 7, 922));
+        map.put(4, new Cricket("rohit ", 8, 890));
+        map.put(5, new Cricket("dravid ", 5, 700));
+        
+        Set<Map.Entry<Integer,Cricket>> entrySet=map.entrySet();
+        for(Map.Entry<Integer,Cricket>st:entrySet)
+        {
+            System.out.println(st.getValue());
+        }
 
