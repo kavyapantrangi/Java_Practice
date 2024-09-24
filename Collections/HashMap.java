@@ -152,3 +152,11 @@ public class Cricket {
             System.out.println(st.getValue());
         }
 
+
+
+        //Internal working
+        same hashcode->creating a linked list in buckets
+        same key value->updating the key value
+    null key  value is present in the zeroth bucket
+            
+        
