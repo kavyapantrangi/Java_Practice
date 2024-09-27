@@ -33,3 +33,23 @@ public class sumTest {
 
 
 }
+
+
+
+
+
+
+public class sumTest {
+    public static void main(String[] args) {
+        //by using the  instance of the class
+
+Isum sum=new sumTest()::sum2;
+        System.out.println("By using the instance of the class ");
+        System.out.println(sum.sum(12,67));
+
+    }
+    int sum2(int v1,int v2)
+    {
+        return v1+v2;
+    }
+}
