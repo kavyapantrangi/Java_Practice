@@ -53,3 +53,27 @@ Isum sum=new sumTest()::sum2;
         return v1+v2;
     }
 }
+
+
+//another method
+public class sumTest {
+    public static void main(String[] args) {
+        //by using the  instance of the class
+
+Isum sum=sumTest::sum2;
+        System.out.println("By using the instance of the class ");
+      int v=  sum.sum(new sumTest(),12,45);
+        System.out.println("The value is "+v);
+
+    }
+    int sum2(int v1,int v2)
+    {
+        return v1+v2;
+    }
+}
+
+
+
+
+
+
