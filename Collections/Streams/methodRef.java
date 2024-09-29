@@ -72,6 +72,20 @@ Isum sum=sumTest::sum2;
     }
 }
 
+//STring Concation
+package streams;
+
+import java.util.function.BiFunction;
+
+public class Test2 {
+    public static void main(String[] args) {
+        String str1="hello";
+        String str2="world";
+        BiFunction<String,String,String>concat=String::concat;
+        String ans= concat.apply("Kavya","Pantrangi");
+        System.out.println(ans);
+    }
+}
 
 
 
