@@ -88,6 +88,37 @@ public class Test2 {
 }
 
 
+package streams;
+
+import java.io.PrintStream;
+import java.util.ArrayList;
+import java.util.function.BiConsumer;
+import java.util.function.Consumer;
+import java.util.function.Function;
+import java.util.function.Supplier;
+
+public class Bi {
+    public static void main(String[] args) {
+        //to convert into uppercase
+        //the following method is used for a particular string only
+        String a="Hello";
+        Supplier<String>str =a::toUpperCase;
+        System.out.println(str.get());
+        //we apply it instantly
+        Function<String,String>input=String::toUpperCase;
+        System.out.println(input.apply("kavyaa"));
+        System.out.println(input.apply("kalix..."));
+
+//how to use printstream which will accepts two paramenters and return
+       BiConsumer <PrintStream,String>consumetr= PrintStream::println;
+        consumetr.accept(new PrintStream(System.out),"kavyaaa");
+        consumetr.accept(new PrintStream(System.out),"Ramesh");
+        consumetr.accept(new PrintStream(System.out),"Luna valeria");
+
+/
+        
+    }
+}
 
 
 
