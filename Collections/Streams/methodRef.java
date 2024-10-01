@@ -121,4 +121,28 @@ public class Bi {
 }
 
 
+//method referenec of arraylist :
+package streams;
+
+import java.util.function.BiFunction;
+import java.util.function.Function;
+import java.util.function.Supplier;
+
+public class Test4 {
+    public static void main(String[] args) {
+//      Supplier<Employee>supplier=Employee::new;
+        //by using by function
+
+        Function<Integer,Employee> bc=Employee::new;
+        Employee ec=bc.apply(10);
+        System.out.println(ec);
+        //by using ByFunction
+        BiFunction<Integer,String,Employee>bifunc=Employee::new;
+        Employee e2=bifunc.apply(2,"Kavya");
+        System.out.println(e2);
+    }
+}
+
+
+
 
