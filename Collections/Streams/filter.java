@@ -43,3 +43,17 @@ public class Arr {
     }
 }
 
+//Takewhile: which shortcircuit the intermediate operations
+Stream.of(1,2,3,4,5,6,7).takeWhile(i->
+{
+    System.out.println("welcome "+i);
+    return i<5;
+}).
+        map(num->num*num).forEach(i-> System.out.println(i));
+
+
+
+
+
+
+
